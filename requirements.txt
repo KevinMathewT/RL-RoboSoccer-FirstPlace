@@ -1,0 +1,7 @@
+cloudpickle==1.3.0
+torch==1.5.1
+gym==0.17.2
+stable-baselines3==1.1.0a0
+-e git+https://github.com/IEEE-BITS-Pilani-Student-Chapter/robo-soccer.git@b68586a1c45d7b8360ab9d081c47c42f484da245#egg=robo_soccer
+tensorflow==1.15.2
+keras==2.3.1
