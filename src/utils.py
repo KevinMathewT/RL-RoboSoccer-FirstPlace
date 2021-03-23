@@ -11,7 +11,6 @@ def colab_render(env, model):
     total_reward = 0
     while not done:
         action, _states = model.predict(ob)
-        # print(action)
         ob, reward, done, info = env.step(action)
 
         plt.clf()
@@ -51,15 +50,7 @@ def game_render(env, model):
     while not done:
         step += 1
         action, _states = model.predict(ob)
-        # print(action)
         ob, reward, done, info = env.step(action)
-
-        # plt.figure(3)
-        # plt.clf()
-        # plt.imshow(env.render())
-        # plt.title("%s. Step: %d" % (env._spec.id, step))
-
-        # plt.pause(0.001)  # pause for plots to update
 
         plt.clf()
         title_str = ("reward : " + str(reward))
