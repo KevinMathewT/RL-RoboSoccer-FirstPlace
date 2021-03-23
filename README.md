@@ -15,7 +15,7 @@ For my solution I modified the observation space to be the manhattan distance an
 ### Reinforcement Learning Agent
 For the RL Agent, I used an Advantage Actor Critic (A2C) network, implemented in [StableBaselines3](https://github.com/DLR-RM/stable-baselines3). 
 
-```
+```python
 ActorCriticPolicy(
   (features_extractor): FlattenExtractor(
     (flatten): Flatten(start_dim=1, end_dim=-1)
@@ -38,7 +38,7 @@ ActorCriticPolicy(
 )
 ```
 For training I used the `RMSpropTFLike`, as it stabilized training as given [here](https://github.com/DLR-RM/stable-baselines3/pull/110#issuecomment-663255241).
-```
+```python
 policy_kwargs["optimizer_class"] = RMSpropTFLike
 policy_kwargs["optimizer_kwargs"] = dict(
     alpha=0.99, eps=1e-5, weight_decay=0)
@@ -52,14 +52,14 @@ $ pip install -r requirements.txt
 
 ## Training
 For training the model execute:
-```
+```bash
 $ python -m src.2v2.train
 ```
 Similarly you can execute `python -m src.5v5.train` and `python -m src.10v10.train` to train the agent for 5v5 and 10v10 environments.
 
 ## Rendering
 You can also render and watch a game played by the trained agent by exeuting
-```
+```bash
 $ python -m src.2v2.render_game
 ```
 Similarly you can execute `python -m src.5v5.render_game` and `python -m src.10v10.render_game` to render a game played in the 5v5 and 10v10 environments.
