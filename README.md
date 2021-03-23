@@ -58,7 +58,7 @@ $ python -m src.2v2.train
 Similarly you can execute `python -m src.5v5.train` and `python -m src.10v10.train` to train the agent for 5v5 and 10v10 environments.
 
 ## Rendering
-You can also render and watch a game played by the trained agent by exeuting
+You can also render and watch a game played by the trained agent by executing
 ```bash
 $ python -m src.2v2.render_game
 ```
