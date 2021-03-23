@@ -37,7 +37,7 @@ ActorCriticPolicy(
   (value_net): Linear(in_features=64, out_features=1, bias=True)
 )
 ```
-For training I used the `RMSpropTFLike`, as it stabilized training as given [here](https://github.com/DLR-RM/stable-baselines3/pull/110#issuecomment-663255241).
+For training I used the `RMSpropTFLike` optimizer, as it stabilized training as given [here](https://github.com/DLR-RM/stable-baselines3/pull/110#issuecomment-663255241).
 ```python
 policy_kwargs["optimizer_class"] = RMSpropTFLike
 policy_kwargs["optimizer_kwargs"] = dict(
