@@ -57,6 +57,8 @@ $ python -m src.2v2.train
 ```
 Similarly you can execute `python -m src.5v5.train` and `python -m src.10v10.train` to train the agent for 5v5 and 10v10 environments.
 
+Models are saved in `./generated/`
+
 ## Experiments
 Average Scores over 30 Episodes for my experiments in the 2v2 environment:
 | Model | Observation Space | MLP Extractor Policy Network | MLP Extractor Value Network | Training Timsteps | Score |
