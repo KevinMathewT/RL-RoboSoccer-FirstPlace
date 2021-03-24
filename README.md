@@ -58,7 +58,7 @@ $ python -m src.2v2.train
 Similarly you can execute `python -m src.5v5.train` and `python -m src.10v10.train` to train the agent for 5v5 and 10v10 environments.
 
 ## Experiments
-Average Scores over 30 Episodes for my experiments:
+Average Scores over 30 Episodes for my experiments in the 2v2 environment:
 | Model | Observation Space | MLP Extractor Policy Network | MLP Extractor Value Network | Training Timsteps | Score |
 | ----- |:-----------------:|:----------------------------:|:---------------------------:|:--------------------:|:-----------:|
 | A2C   | Distance + Direction Vector of left team from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 10000 | 2617.0491 |
