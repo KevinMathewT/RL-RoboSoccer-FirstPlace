@@ -45,7 +45,7 @@ policy_kwargs["optimizer_kwargs"] = dict(
 ```
 
 ## Prerequisites
-Use pip install requirements for the repository
+Use pip to install requirements for the repository
 ```
 $ pip install -r requirements.txt
 ```
