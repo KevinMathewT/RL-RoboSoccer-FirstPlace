@@ -67,7 +67,7 @@ Average Scores over 30 Episodes for my experiments in the 2v2 environment:
 | A2C   | Distance + Direction Vector of both teams from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 15000 | 2148.8943 |
 | A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 2 Layered (64, 64) | 15000 | 3496.6428 |
 | A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 2 Layered (64, 64) | 20000 | 5306.7699 |
-| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 1 Layered (64) | 10000 | 5471.0487 |
+| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 1 Layered (64) | 15000 | 5471.0487 |
 | A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 1 Layered (64) | 10000 | 5700.8237 |
 
 ## Rendering
