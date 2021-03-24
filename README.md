@@ -4,7 +4,7 @@ This repository contains the code and a writeup for the first place solution of 
 
 The event works on a custom built environment for simulation, made using OpenAI Gym. They had developed an environment on Gym using Pygame with its assets including the defenders and the attackers. Furthermore, the feedback of every action and the state-space log would be available via pre-defined functions. 
 
-Find more about the competition [here](https://dare2compete.com/o/ai-robosoccer-apogee-bits-pilani-birla-institute-of-technology-science-bits-pilani-151055), and find the repo for the OpenAI Gym environment [here](https://github.com/IEEE-BITS-Pilani-Student-Chapter/robo-soccer)
+Find more about the competition [here](https://dare2compete.com/o/ai-robosoccer-apogee-bits-pilani-birla-institute-of-technology-science-bits-pilani-151055), and find the repo for the OpenAI Gym environment [here](https://github.com/IEEE-BITS-Pilani-Student-Chapter/robo-soccer).
 
 ## Solution Outline
 ### Observation Space
@@ -45,7 +45,7 @@ policy_kwargs["optimizer_kwargs"] = dict(
 ```
 
 ## Prerequisites
-Use pip to install requirements for the repository
+Use pip to install requirements for the repository:
 ```
 $ pip install -r requirements.txt
 ```
