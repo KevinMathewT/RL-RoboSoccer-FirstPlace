@@ -57,8 +57,21 @@ $ python -m src.2v2.train
 ```
 Similarly you can execute `python -m src.5v5.train` and `python -m src.10v10.train` to train the agent for 5v5 and 10v10 environments.
 
+## Experiments
+Average Scores over 30 Episodes for my experiments:
+| Model | Observation Space | MLP Extractor Policy Network | MLP Extractor Value Network | Training Timsteps | Score |
+| ----- |:-----------------:|:----------------------------:|:---------------------------:|:--------------------:|:-----------:|
+| A2C   | Distance + Direction Vector of left team from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 10000 | 2617.0491 |
+| A2C   | Distance + Direction Vector of left team from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 15000 | 3033.4046 |
+| A2C   | Distance + Direction Vector of left team from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 20000 | 2148.8943 |
+| A2C   | Distance + Direction Vector of both teams from ball | 2 Layered (64, 64)  | 2 Layered (64, 64) | 15000 | 2148.8943 |
+| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 2 Layered (64, 64) | 15000 | 3496.6428 |
+| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 2 Layered (64, 64) | 20000 | 5306.7699 |
+| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 1 Layered (64) | 10000 | 5471.0487 |
+| A2C   | Distance + Direction Vector of both teams from ball + Ball from both goals | 2 Layered (64, 64)  | 1 Layered (64) | 10000 | 5700.8237 |
+
 ## Rendering
-You can also render and watch a game played by the trained agent by executing
+You can also render and watch a game played by the trained agent by executing:
 ```bash
 $ python -m src.2v2.render_game
 ```
