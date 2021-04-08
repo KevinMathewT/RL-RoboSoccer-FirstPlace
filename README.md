@@ -6,6 +6,8 @@ The event works on a custom built environment for simulation, made using OpenAI 
 
 Find more about the competition [here](https://dare2compete.com/o/ai-robosoccer-apogee-bits-pilani-birla-institute-of-technology-science-bits-pilani-151055), and find the repo for the OpenAI Gym environment [here](https://github.com/IEEE-BITS-Pilani-Student-Chapter/robo-soccer).
 
+![random_actions](https://user-images.githubusercontent.com/22857545/114004006-df51a000-987b-11eb-82b3-6dfb2456854b.gif)
+
 ## Solution Outline
 ### Observation Space
 The original observation space from the gym environment provides the x and y coordinates of each player from both teams and the ball, along with the velocities of each player.
