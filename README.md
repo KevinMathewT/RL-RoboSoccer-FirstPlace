@@ -15,7 +15,7 @@ The original observation space from the gym environment provides the x and y coo
 For my solution I modified the observation space to be the manhattan distance and the direction vector of the ball from each player and both the goal posts, and dropped the velocities completely. This modification was crucial for the winning solution.
 
 ### Reinforcement Learning Agent
-For the RL Agent, I used an Advantage Actor Critic (A2C) network, implemented in [StableBaselines3](https://github.com/DLR-RM/stable-baselines3). 
+For the RL Agent, I used an Advantage Actor Critic (A2C) network, implemented in [StableBaselines3](https://github.com/DLR-RM/stable-baselines3), which contains reliable implementations of reinforcement learning algorithms in PyTorch.
 
 ```python
 ActorCriticPolicy(
